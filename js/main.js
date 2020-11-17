@@ -11,16 +11,16 @@ const app = new Vue({
    },
    methods:{
       prevClick: function(){
-         if(this.myIndex != 0){
+         if (this.myIndex != 0) {
             this.myIndex--
-         }else{
+         } else {
             this.myIndex = this.myArray.length - 1
          }
       },
       forwClick: function(){
-         if(this.myIndex != this.myArray.length - 1){
+         if (this.myIndex != this.myArray.length - 1) {
             this.myIndex++
-         }else{
+         } else {
             this.myIndex = 0
          }
       }

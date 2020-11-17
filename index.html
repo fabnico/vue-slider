@@ -23,7 +23,7 @@
                </div>
                <div class="col-xs-12">
                   <select v-model="myIndex">
-                     <option v-for="image in myArray.length" :value="image - 1">Immagine {{image}}</option>
+                     <option v-for="(image, index) in myArray" :value="index">Immagine {{index + 1}}</option>
                   </select>
                </div>
             </div>
